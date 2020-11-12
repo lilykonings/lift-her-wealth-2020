@@ -7,6 +7,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 40px 0;
 }
 
 .logo {
@@ -62,7 +63,7 @@
 
 .headline {
 	display: flex;
-	margin: 140px 0;
+	margin: 80px 0;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -196,6 +197,9 @@
 
 .speakers {
 	margin: 160px 0;
+	// background-color: $v--color-green;
+	// padding: 80px 0;
+	// color: $v--color-white;
 
 	h2 {
 		text-align: center;

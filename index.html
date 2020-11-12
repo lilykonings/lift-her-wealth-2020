@@ -3,7 +3,7 @@ title: Hello World
 layout: default
 ---
 
-<nav class="header">
+<nav class="header max-width">
 	<div class="logo">
 		<div class="logo_shape"></div>
 		<div class="logo_text">Lift Her Wealth</div>
@@ -16,36 +16,40 @@ layout: default
 </nav>
 
 <section class="headline">
-	<div class="headline_body">
-		<div class="star">
-			<a href=""><span>Free to attend</span></a>
+	<div class="max-width">
+		<div class="headline_body">
+			<div class="star">
+				<a href=""><span>Free to attend</span></a>
+			</div>
+			<div class="headline_date">Dec 1, 2020 | Virtual Summit</div>
+			<h1>
+				Let's talk about <span class="em">money.</span>
+				<br/>No pride or judgement,
+				<br/>just empowerment.
+			</h1>
+			<a class="headline_cta" href="">RSVP Now</a>
 		</div>
-		<div class="headline_date">Dec 1, 2020 | Virtual Summit</div>
-		<h1>
-			Let's talk about <span class="em">money.</span>
-			<br/>No pride or judgement,
-			<br/>just empowerment.
-		</h1>
-		<a class="headline_cta" href="">RSVP now &#10230;</a>
 	</div>
 </section>
 
 <section id="speakers" class="speakers">
-	<h2>Speakers</h2>
-	<div class="speakers_grid">
-		{% for speaker in site.data.speakers %}
-			<div class="speakers_item">
-				<div class="speakers_photo">
-					<img src="{{ '/assets/img/' | append: speaker.img | relative_url }}">
+	<div class="max-width">
+		<h2>Speakers</h2>
+		<div class="speakers_grid">
+			{% for speaker in site.data.speakers %}
+				<div class="speakers_item">
+					<div class="speakers_photo">
+						<img src="{{ '/assets/img/' | append: speaker.img | relative_url }}">
+					</div>
+					<div class="speakers_name">
+						{{ speaker.name }}
+					</div>
+					<div class="speaker_title">
+						{{ speaker.title }}
+					</div>
 				</div>
-				<div class="speakers_name">
-					{{ speaker.name }}
-				</div>
-				<div class="speaker_title">
-					{{ speaker.title }}
-				</div>
-			</div>
-		{% endfor %}
+			{% endfor %}
+		</div>
 	</div>
 </section>
 

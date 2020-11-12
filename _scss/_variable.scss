@@ -1,0 +1,60 @@
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+// Table of Contents
+// - Global
+//   - Color
+//   - Site
+//   - Grid
+// - Module
+//   - Header
+
+// --------------------------------------------------
+// Global
+// --------------------------------------------------
+// Font
+// --------------------------------------------------
+
+
+// Color
+$v--color-powder:               #ffe5df;
+$v--color-blush:                #d8b5b2;
+$v--color-citrus:               #f47354;
+$v--color-mo-money:             #012a2a;
+$v--color-green:                #32534c;
+$v--color-sage:                 #307956;
+$v--color-white:                #ffffff;
+$v--color-black:                $v--color-mo-money;
+
+// Grid
+// --------------------------------------------------
+$v--grid-columns:               12;
+$v--grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px
+);
+
+$v--grid-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 900px,
+  xl: 1200px
+);
+
+$v--grid-gutter-width:          0;
+$v--grid-gutter-widths: (
+  xs: $v--grid-gutter-width,
+  sm: $v--grid-gutter-width,
+  md: $v--grid-gutter-width,
+  lg: $v--grid-gutter-width,
+  xl: $v--grid-gutter-width
+);
+
+// --------------------------------------------------
+// Module
+// --------------------------------------------------
+// Name
+// --------------------------------------------------

@@ -1,0 +1,131 @@
+.max-width {
+	margin: 0 auto;
+	max-width: 1260px;
+}
+
+.star {
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	
+	a {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 120px;
+		height: 120px;
+		border-radius: 8px;
+		background: $v--color-green;
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		font-size: 24px;
+		color: $v--color-citrus;
+		transform: rotate(15deg);
+
+		&:before,
+	    &:after {
+	      content: "";
+	      position: absolute;
+	      top: 0;
+	      left: 0;
+	      height: 120px;
+	      width: 120px;
+	      border-radius: 8px;
+	      background: $v--color-green;
+	      z-index: -1;
+	    }
+
+	    &:before {
+	      transform: rotate(30deg);
+	    }
+
+	    &:after {
+	      transform: rotate(60deg);
+	    }
+	}
+
+	// span {
+	// 	display: inline-block;
+	// 	transform: rotate(-15deg);
+	// }
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header_logo {
+	flex-grow: 5;
+	font-family: 'Gentium Basic', serif;
+	font-weight: 700;
+	font-size: 24px;
+	letter-spacing: -0.24px;
+	color: $v--color-green;
+}
+
+.header_nav {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		flex-grow: 1;
+		display: inline-block;
+		text-align: right;
+	}
+
+	a {
+		color: $v--color-green;
+		font-weight: 600;
+	}
+}
+
+.header_date {
+	flex-grow: 2;
+	text-align: right;
+	
+	span {
+		display: inline-block;
+		padding: 4px 8px;
+		background: $v--color-blush;
+		border-radius: 4px;
+		color: $v--color-white;
+	}
+}
+
+.headline {
+	display: flex;
+	margin: 8px 0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	h1 {
+		line-height: 1.2;
+		font-size: 64px;
+		font-family: 'Gentium Basic', serif;
+		font-weight: 700;
+		color: $v--color-black;
+	}
+
+	.em {
+		color: $v--color-citrus;
+	}
+}
+
+// .headline_photo {
+// 	height: 640px;
+// 	overflow: hidden;
+
+// 	img {
+// 		max-height: 100%;
+// 		border-radius: 160px;
+// 	}
+// }

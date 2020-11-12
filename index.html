@@ -3,31 +3,66 @@ title: Hello World
 layout: default
 ---
 
-<div class="star">
-	<a href=""><span>Free to attend</span></a>
-</div>
-
-<div class="header">
-	<div class="header_logo">
-		Lift Her Wealth
+<nav class="header">
+	<div class="logo">
+		<div class="logo_shape"></div>
+		<div class="logo_text">Lift Her Wealth</div>
 	</div>
 	<ul class="header_nav">
-		<li><a href="">About</a></li>
 		<li><a href="">Speakers</a></li>
-		<li><a href="">FAQ</a></li>
+		<li><a href="">Schedule</a></li>
+		<li><a href="">FAQs</a></li>
 	</ul>
-</div>
+</nav>
 
-<div class="headline">
-	<div>
+<section class="headline">
+	<div class="headline_body">
+		<div class="star">
+			<a href=""><span>Free to attend</span></a>
+		</div>
+		<div class="headline_date">Dec 1, 2020 | Virtual Summit</div>
 		<h1>
 			Let's talk about <span class="em">money.</span>
 			<br/>No pride or judgement,
 			<br/>just empowerment.
 		</h1>
-		Something else
+		<a class="headline_cta" href="">RSVP now &#10230;</a>
 	</div>
-	<!-- <div class="headline_photo">
-		<img src="{{ '/assets/img/sallie.jpg' | relative_url }}"/>
-	</div> -->
-</div>
+</section>
+
+<section class="speakers">
+	<h2>Speakers</h2>
+	<div class="speakers_grid">
+		{% for speaker in site.data.speakers %}
+			<div class="speakers_item">
+				<div class="speakers_photo">
+					<img src="{{ '/assets/img/' | append: speaker.img | relative_url }}">
+				</div>
+				<div class="speakers_name">
+					{{ speaker.name }}
+				</div>
+				<div class="speaker_title">
+					{{ speaker.title }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</section>
+
+<section class="spread">
+	<div class="spread_item">
+		<div>&#10035;</div>
+		<h3>Expert Talks</h3>
+		<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
+	</div>
+	<div class="spread_item">
+		<div>&#10045;</div>
+		<h3>Tactical Workshops</h3>
+		<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
+	</div>
+	<div class="spread_item">
+		<div>&#10059;</div>
+		<h3>Breakout Rooms</h3>
+		<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
+	</div>
+</section>

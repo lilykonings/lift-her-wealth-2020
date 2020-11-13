@@ -162,8 +162,6 @@
 }
 
 .spread {
-	margin: 80px auto;
-
 	h2 {
 		text-align: center;
 		font-size: 64px;
@@ -174,13 +172,8 @@
 	}
 }
 
-.spread_body {
-	display: flex;
-	justify-content: space-between;
-}
-
 .spread_item {
-	padding: 0 80px;
+	padding: 0 40px;
 
 	h3 {
 		margin: 0 0 8px;
@@ -188,22 +181,27 @@
 	}
 
 	p {
-		font-size: 16px;
+		line-height: 1.36;
+		font-size: 18px;
 	}
 }
 
 .spread_icon {
+	margin-bottom: 4px;
 	font-size: 64px;
 	color: $v--color-citrus;
 }
 
 .speakers {
+	border-top: 2px solid $v--color-citrus;
+	border-bottom: 2px solid $v--color-citrus;
 	margin-top: 80px;
 	background-color: $v--color-powder;
-	padding: 40px 0;
+	padding: 16px 0;
 	// color: $v--color-white;
 
 	h2 {
+		margin-bottom: 80px;
 		text-align: center;
 		font-size: 64px;
 		color: $v--color-citrus;
@@ -263,17 +261,18 @@
 
 .agenda {
 	margin-top: 20px;
-	padding: 40px 0;
+	padding: 16px 0;
 	line-height: 1.28;
 	font-size: 20px;
 
 	h2 {
+		margin-bottom: 80px;
 		text-align: center;
 		font-size: 64px;
-		color: $v--color-citrus;
+		color: $v--color-green;
 		-webkit-text-fill-color: $v--color-white;
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $v--color-citrus;
+		-webkit-text-stroke-color: $v--color-green;
 	}
 }
 
@@ -300,7 +299,7 @@
 
 	svg {
 		position: absolute;
-		top: 3px;
+		top: 4px;
 		left: 0;
 		width: 16px;
 	}

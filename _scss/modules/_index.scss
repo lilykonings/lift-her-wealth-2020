@@ -107,6 +107,7 @@
 }
 
 .headline_icon {
+	display: block;
 	margin: 24px auto;
 	width: 40px;
 	transform: rotate(90deg);
@@ -232,6 +233,7 @@
 	justify-content: center;
 	width: 200px;
 	height: 320px;
+	border: 2px solid $v--color-citrus;
 	border-radius: 160px;
 	background-color: $v--color-blush;
 	overflow: hidden;
@@ -299,7 +301,7 @@
 
 	svg {
 		position: absolute;
-		top: 4px;
+		top: 6px;
 		left: 0;
 		width: 16px;
 	}
@@ -311,13 +313,13 @@
 
 .agenda_speaker {
 	display: block;
-	margin-top: 8px;
 	font-family: 'Gentium Basic', serif;
 	font-style: italic;
 	font-size: 22px;
 }
 
 .agenda_title {
+	margin-bottom: 8px;
 	// font-family: 'Gentium Basic', serif;
 	// font-style: italic;
 	// font-size: 22px;

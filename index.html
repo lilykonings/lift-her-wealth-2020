@@ -3,16 +3,15 @@ title: Hello World
 layout: default
 ---
 
-<nav class="header max-width">
-	<div class="logo">
-		<div class="logo_shape"></div>
-		<div class="logo_text">Lift Her Wealth</div>
+<nav class="header">
+	<div class="header_body max-width">
+		<div class="header_logo">LIFT HER WEALTH</div>
+		<ul class="header_nav">
+			<li><a href="#speakers">Speakers</a></li>
+			<li><a href="#agenda">Agenda</a></li>
+			<li><a href="">FAQs</a></li>
+		</ul>
 	</div>
-	<ul class="header_nav">
-		<li><a href="#speakers">Speakers</a></li>
-		<li><a href="">Schedule</a></li>
-		<li><a href="">FAQs</a></li>
-	</ul>
 </nav>
 
 <section class="headline">
@@ -28,6 +27,35 @@ layout: default
 				<br/>just empowerment.
 			</h1>
 			<a class="headline_cta" href="">RSVP Now</a>
+			<div class="headline_icon">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 487">
+					<g><path d="M482,234.839l-116.5-67.261c-4.783-2.761-10.898-1.122-13.66,3.66c-2.762,4.783-1.122,10.898,3.66,13.66l84.213,48.62H10
+					c-5.523,0-10,4.478-10,10c0,5.521,4.477,10,10,10h429.646L355.5,302.101c-4.783,2.762-6.422,8.877-3.66,13.66
+					c1.853,3.208,5.213,5.002,8.669,5.002c1.696,0,3.416-0.434,4.991-1.342L482,252.159c3.094-1.786,5-5.088,5-8.66
+					C487,239.927,485.094,236.625,482,234.839z"></path></g>
+				</svg>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="spread max-width">
+	<h2>At A Glance</h2>
+	<div class="spread_body">
+		<div class="spread_item">
+			<div class="spread_icon">&#10035;</div>
+			<h3>9 Expert Talks</h3>
+			<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
+		</div>
+		<div class="spread_item">
+			<div class="spread_icon">&#10045;</div>
+			<h3>3 Workshops</h3>
+			<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
+		</div>
+		<div class="spread_item">
+			<div class="spread_icon">&#10059;</div>
+			<h3>3 Breakout Rooms</h3>
+			<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
 		</div>
 	</div>
 </section>
@@ -47,29 +75,44 @@ layout: default
 					<div class="speakers_title">
 						{{ speaker.title }}
 					</div>
-					<div class="speakers_talk">
-						{{ speaker.talk }}
-					</div>
 				</div>
 			{% endfor %}
 		</div>
 	</div>
 </section>
 
-<section class="spread">
-	<div class="spread_item">
-		<div>&#10035;</div>
-		<h3>Expert Talks</h3>
-		<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
+<section id="agenda" class="agenda max-width">
+	<h2>Agenda</h2>
+	<div class="agenda_header g--grid_row">
+		<div class="g--grid_col-3">Event</div>
+		<div class="g--grid_col-5">Description</div>
+		<div class="g--grid_col-1">Type</div>
+		<div class="g--grid_col-1">PST</div>
+		<div class="g--grid_col-1">EST</div>
+		<div class="g--grid_col-1">BST</div>
 	</div>
-	<div class="spread_item">
-		<div>&#10045;</div>
-		<h3>Tactical Workshops</h3>
-		<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
-	</div>
-	<div class="spread_item">
-		<div>&#10059;</div>
-		<h3>Breakout Rooms</h3>
-		<p>This is the good stuff. You don't want to miss it. We worked really hard on this! Please enjoy it.</p>
-	</div>
+	{% for event in site.data.agenda %}
+		<div class="agenda_item g--grid_row">
+			<div class="agenda_intro g--grid_col-3">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="14px" viewBox="0 0 17 14" version="1.1">
+				    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <path d="M16.5029,7.09375 C16.5029,6.80371 16.3848,6.51367 16.1592,6.29883 L10.6592,0.820312 C10.4229,0.583984 10.165,0.476562 9.89648,0.476562 C9.28418,0.476562 8.84375,0.916992 8.84375,1.49707 C8.84375,1.80859 8.97266,2.06641 9.16602,2.25977 L10.7666,3.88184 L13.2588,6.14844 L11.3037,6.03027 L1.58203,6.03027 C0.9375,6.03027 0.49707,6.45996 0.49707,7.09375 C0.49707,7.72754 0.9375,8.16797 1.58203,8.16797 L11.3037,8.16797 L13.2695,8.03906 L10.7666,10.3057 L9.16602,11.9277 C8.97266,12.1211 8.84375,12.3896 8.84375,12.6904 C8.84375,13.2812 9.28418,13.7109 9.89648,13.7109 C10.165,13.7109 10.4229,13.6035 10.6592,13.3779 L16.1592,7.88867 C16.3848,7.68457 16.5029,7.38379 16.5029,7.09375 Z" id="Path" fill="#000000" fill-rule="nonzero"/>
+				    </g>
+				</svg>
+				<div>
+					<div class="agenda_title">{{ event.title }}</div>
+					<div class="agenda_speaker">{{ event.speaker }}</div>
+				</div>
+			</div>
+			<div class="g--grid_col-5">{{ event.desc }}</div>
+			<div class="g--grid_col-1">{{ event.type }}</div>
+			<div class="g--grid_col-1">{{ event.pst }}</div>
+			<div class="g--grid_col-1">{{ event.est }}</div>
+			<div class="g--grid_col-1">{{ event.bst }}</div>
+		</div>
+	{% endfor %}
 </section>
+
+
+
+

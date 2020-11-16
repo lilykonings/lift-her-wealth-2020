@@ -434,3 +434,35 @@
 		text-decoration: underline;
 	}
 }
+
+.partners {
+	margin-top: 80px;
+	padding: 16px 0;
+	text-align: center;
+
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+		font-family: 'Gentium Basic', serif;
+		font-size: 40px;
+		color: $v--color-green;
+		// -webkit-text-fill-color: $v--color-white;
+		// -webkit-text-stroke-width: 1px;
+		// -webkit-text-stroke-color: $v--color-green;
+	}
+
+	&_logos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	svg {
+		height: 60px;
+		fill: $v--color-green;
+	}
+
+	a:last-child svg {
+		margin-left: 80px;
+	}
+}

@@ -11,6 +11,12 @@
   pst: 10:15am
   est: 1:15pm
   bst: 7:15pm
+- title: Breakout Room&#58; Europe
+  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
+  type: Breakout
+  pst: 10:15am
+  est: 1:15pm
+  bst: 7:15pm
 - title: The 6 Money Lies Women Are Told
   speaker: Sallie Krawcheck
   desc: “Be more confident. Lean in. You go, girl!” The idea that success is there for women to grab if we do everything *just right* feels good because it puts us in control. But it’s a lie. Even before the recession knocked so many women sideways, our forward progress had been stalled. Join Ellevest CEO Sallie Krawcheck to explore the money lies that are keeping us from financial equality and some critical truths that will help us get there.
@@ -46,6 +52,12 @@
   pst: 2pm
   est: 5pm
   bst: 11pm
+- title: Breakout Rooms&#58; US East Coast &amp; Canada
+  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
+  type: Breakout
+  pst: 2pm
+  est: 5pm
+  bst: 11pm
 - title: Redefining Your Compensation Strategy
   speaker: Keisha Mistry
   desc: 60% of women believe they are worth more than they are getting paid. The question becomes how can we start working towards changing this? Part of the answer lies in your compensation package. Most employees only consider salary as part of their compensation. The truth is there are many factors that can contribute to your compensation packages. It also includes vacation days, extended health benefits, flexible work, and the list could go on. You could be miscalculating hundreds (and hopefully not thousands) of dollars. In this talk, “Redefining your Compensation Strategy” I will break down the different facets of compensation and help you strategize your next negotiation. You will leave this talk feeling empowered with the knowledge to take control of your compensation and feel you’re being paid your worth.
@@ -67,24 +79,30 @@
   pst: 3:30pm
   est: 6:30pm
   bst: 12:30am
-- title: The Promises and Perils of Physical Investments
-  speaker: Hena Mehta<br>Dipika Jaikishan
-  desc: In this candid chat, Hena and Dipika will be talking about home ownership, investing in precious commodities such as gold, and the pros and cons of these tangible assets.
-  type: Talk
-  pst: 4pm
-  est: 7pm
-  bst: 1am
-- title: Workshop&#58; Getting Started With Building Your Financial System
+- title: Workshop&#58; Getting Started With Building Your Financial System (Beginners)
   speaker: Kavya Ravikanti
   desc: Not sure where to start with tackling your money? In this workshop, we'll go over the key components of a personal finance system and then start building one for you by assessing your numbers. This workshop is aimed at those just starting on their financial journey, but open to anyone who'd like to join!
   type: Workshop
   pst: 4pm
   est: 7pm
   bst: 1am
-- title: Workshop&#58; Current State of Affairs
+- title: Workshop&#58; Talk Money to Me&#58; A Roadmap to Creating Financial Goals (Advanced)
   speaker: Cissy Hu
-  desc: TBD
+  desc: Have a growing savings account, allocating to your 401(k), and paying down debt, but not sure what to do next with your money? Join this workshop to level up on your money management strategies. During the session, we’ll evaluate your 3 key financial metrics, create attainable financial goals, build out your personal finance tech stack, and walk away with the ultimate roadmap for managing your personal finance system. 
   type: Workshop
   pst: 4pm
   est: 7pm
   bst: 1am
+- title: Breakout Rooms&#58; US Central &amp; West Coast
+  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
+  type: Breakout
+  pst: 5:30pm
+  est: 8:30pm
+  bst: 2:30am
+- title: The Promises and Perils of Physical Investments
+  speaker: Hena Mehta<br>Dipika Jaikishan
+  desc: In this candid chat, Hena and Dipika will be talking about home ownership, investing in precious commodities such as gold, and the pros and cons of these tangible assets.
+  type: Talk
+  pst: 5:30pm
+  est: 8:30pm
+  bst: 2:30am

@@ -325,7 +325,7 @@
 			border-radius: 16px;
 			margin-left: -40px;
 			padding: 18px 0 16px 40px;
-			background-color: $v--color-green;
+			background-color: $v--color-citrus;
 			color: $v--color-white;
 
 			svg {
@@ -376,10 +376,10 @@
 		margin-bottom: 80px;
 		text-align: center;
 		font-size: 64px;
-		color: $v--color-citrus;
+		color: $v--color-green;
 		-webkit-text-fill-color: $v--color-white;
 		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $v--color-citrus;
+		-webkit-text-stroke-color: $v--color-green;
 	}
 
 	&_item {
@@ -444,7 +444,7 @@
 		margin-bottom: 40px;
 		text-align: center;
 		font-family: 'Gentium Basic', serif;
-		font-size: 40px;
+		font-size: 32px;
 		color: $v--color-green;
 		// -webkit-text-fill-color: $v--color-white;
 		// -webkit-text-stroke-width: 1px;

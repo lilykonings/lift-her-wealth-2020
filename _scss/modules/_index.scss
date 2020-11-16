@@ -3,6 +3,16 @@
 	max-width: 1260px;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 .header {
 	position: fixed;
 	left: 0;
@@ -259,6 +269,21 @@
 		font-style: italic;
 		font-size: 20px;
 	}
+
+	&_social {
+		display: flex;
+		margin-top: 8px;
+	}
+
+	svg {
+		width: 20px;
+		height: 20px;
+		fill: $v--color-citrus;
+	}
+
+	a:nth-child(2) svg {
+		margin-left: 8px;
+	}
 }
 
 .agenda {
@@ -296,15 +321,15 @@
 		}
 
 		&.breakout {
-			border: 2px solid $v--color-citrus;
+			// border: 2px solid $v--color-citrus;
 			border-radius: 16px;
 			margin-left: -40px;
 			padding: 18px 0 16px 40px;
-			// background-color: $v--color-green;
-			// color: $v--color-white;
+			background-color: $v--color-green;
+			color: $v--color-white;
 
 			svg {
-				// fill: $v--color-white;
+				fill: $v--color-white;
 			}
 		}
 	}

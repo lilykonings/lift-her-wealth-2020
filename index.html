@@ -69,6 +69,10 @@ layout: default
 					<div class="speakers_title">
 						{{ speaker.title }}
 					</div>
+					<div class="speakers_social">
+						{% if speaker.twitter %}<a href="{{ speaker.twitter }}" target="blank">{% include svg-twitter.html %}</a>{% endif %}
+						{% if speaker.linkedin %}<a href="{{ speaker.linkedin }}" target="blank">{% include svg-linkedin.html %}</a>{% endif %}
+					</div>
 				</div>
 			{% endfor %}
 		</div>
@@ -106,7 +110,7 @@ layout: default
 <section id="faq" class="faq max-width">
 	<h2>FAQ</h2>
 	{% for qa in site.data.faq %}
-		<div class="faq_item">
+		<div class="faq_item noselect">
 			<input type="checkbox" id="chck{{ forloop.index }}">
 			<label class="faq_question" for="chck{{ forloop.index }}">
 				<h3>{{ qa.question }}</h3>

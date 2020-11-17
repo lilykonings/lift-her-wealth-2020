@@ -1,7 +1,7 @@
 .max-width {
 	margin: 0 auto;
-	padding-left: 40px !important;
-	padding-right: 40px !important;
+	padding-left: 32px !important;
+	padding-right: 32px !important;
 	max-width: 1260px;
 }
 
@@ -47,12 +47,18 @@
 		list-style: none;
 
 		li {
-			display: none;
+			display: inline-block;
 			margin-left: 40px;
 			text-align: right;
 
+			&:not(:first-child) {
+				display: none;
+			}
+
 			@media (min-width: map-get($v--grid-breakpoints, sm)) {
-				display: inline-block;
+				&:not(:first-child) {
+					display: inline-block;
+				}
 			}
 		}
 
@@ -67,30 +73,56 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	padding-top: 40px;
+	padding-top: 80px;
+	padding-bottom: 16px;
 	text-align: center;
 
+	@media (min-width: map-get($v--grid-breakpoints, md)) {
+		height: 100vh;
+		padding-top: 40px;
+		padding-bottom: 0;
+	}
+
 	h1 {
-		margin: 32px 0 40px;
+		margin: 16px 0 24px;
 		line-height: 1.2;
-		font-size: 64px;
+		font-size: 32px;
 		font-family: 'Gentium Basic', serif;
 		font-weight: 700;
 		color: $v--color-black;
+
+		@media (min-width: map-get($v--grid-breakpoints, sm)) {
+			
+			font-size: 40px;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			margin: 32px 0 40px;
+			font-size: 64px;
+		}
+
+		br {
+			display: none;
+
+			@media (min-width: map-get($v--grid-breakpoints, sm)) {
+				display: block;
+			}
+		}
 	}
 
 	.em {
 		position: relative;
 
-		&:before {
-			position: absolute;
-			left: 0;
-			content: '\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0';
-			text-decoration: underline;
-			text-decoration-style: wavy;
-			color: $v--color-sage;
-			z-index: -1;
+		@media (min-width: map-get($v--grid-breakpoints, sm)) {
+			&:before {
+				position: absolute;
+				left: 0;
+				content: '\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0\00A0';
+				text-decoration: underline;
+				text-decoration-style: wavy;
+				color: $v--color-sage;
+				z-index: -1;
+			}
 		}
 	}
 
@@ -101,7 +133,11 @@
 	&_date {
 		font-family: 'Space Mono', monospace;
 		font-weight: 700;
-		font-size: 18px;
+		font-size: 16px;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			font-size: 18px;
+		}
 	}
 
 	&_cta {
@@ -110,7 +146,7 @@
 		border-radius: 32px;
 		border: 2px solid $v--color-citrus;
 		background-color: $v--color-white;
-		font-size: 32px;
+		font-size: 18px;
 		font-weight: 500;
 		color: $v--color-citrus;
 
@@ -118,6 +154,14 @@
 		&:focus {
 			background-color: $v--color-citrus;
 			color: $v--color-white;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, sm)) {
+			font-size: 24px;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			font-size: 32px;
 		}
 	}
 
@@ -131,8 +175,25 @@
 
 .star {
 	position: absolute;
-	top: -40px;
-	right: -100px;
+	bottom: -80px;
+	right: 0;
+
+	@media (min-width: map-get($v--grid-breakpoints, sm)) {
+		bottom: 60px;
+		right: -80px;
+	}
+
+	@media (min-width: map-get($v--grid-breakpoints, md)) {
+		top: -40px;
+		right: -80px;
+		bottom: auto;
+	}
+
+	@media (min-width: map-get($v--grid-breakpoints, lg)) {
+		top: -40px;
+		right: -100px;
+		bottom: auto;
+	}
 	
 	a {
 		position: relative;
@@ -265,12 +326,17 @@
 	&_photo {
 		display: flex;
 		justify-content: center;
-		width: 160px;
-		height: 256px;
+		width: 140px;
+		height: 224px;
 		border: 2px solid $v--color-citrus;
 		border-radius: 160px;
 		background-color: $v--color-blush;
 		overflow: hidden;
+
+		@media (min-width: map-get($v--grid-breakpoints, sm)) {
+			width: 160px;
+			height: 256px;
+		}
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
 			width: 200px;

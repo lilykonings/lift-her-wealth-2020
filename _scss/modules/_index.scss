@@ -393,7 +393,7 @@
 	}
 
 	h2 {
-		margin-bottom: 24px;
+		margin-bottom: 0;
 		text-align: center;
 		font-size: 40px;
 		color: $v--color-green;
@@ -402,8 +402,20 @@
 		-webkit-text-stroke-color: $v--color-green;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
-			margin-bottom: 60px;	
 			font-size: 64px;
+		}
+	}
+
+	h3 {
+		margin-top: 32px;
+		text-align: center;
+		font-family: 'Space Mono', monospace;
+		font-weight: 700;
+		font-size: 32px;
+		color: $v--color-citrus;
+
+		&:last-of-type {
+			margin-top: 80px;
 		}
 	}
 
@@ -428,7 +440,7 @@
 		background-color: $v--color-white;
 
 		> div {
-			padding-right: 24px;
+			padding-right: 40px;
 
 			&:last-child {
 				padding-right: 0;
@@ -485,7 +497,7 @@
 	}
 
 	&_desc {
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
 			margin-bottom: 0;

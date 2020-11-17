@@ -81,14 +81,14 @@ layout: default
 
 <section id="agenda" class="agenda max-width g--grid_row">
 	<h2>Agenda</h2>
+	<h3>Day 1</h3>
 	<div class="agenda_header g--grid_row">
 		<div class="g--grid_col-lg-3">Speaker</div>
-		<div class="g--grid_col-lg-6">Event</div>
-		<div class="g--grid_col-lg-1">Day</div>
+		<div class="g--grid_col-lg-7">Event</div>
 		<div class="g--grid_col-lg-1">PST</div>
 		<div class="g--grid_col-lg-1">EST</div>
 	</div>
-	{% for event in site.data.agenda %}
+	{% for event in site.data.agenda-day1 %}
 		<div class="agenda_item g--grid_row {% if event.type == 'Breakout' %}breakout{% endif %}">
 			<div class="agenda_intro g--grid_col-md-9 g--grid_col-lg-3">
 				{% include svg-right.html %}
@@ -96,7 +96,7 @@ layout: default
 				<div class="agenda_speaker">{{ event.speaker }}</div>
 				<div class="agenda_desc">{{ event.desc }}</div>
 			</div>
-			<div class="g--grid_col-0 g--grid_col-lg-6">
+			<div class="g--grid_col-0 g--grid_col-lg-7">
 				<div class="agenda_title">{{ event.title }}</div>
 				<div class="agenda_desc">{{ event.desc }}</div>
 			</div>
@@ -108,7 +108,38 @@ layout: default
 				<span>{{ event.est }} EST</span>
 			</div>
 			<div class="g--grid_col-0 g--grid_col-lg-1">
-				{{ event.day }}
+				{{ event.pst }}
+			</div>
+			<div class="g--grid_col-0 g--grid_col-lg-1">
+				{{ event.est }}
+			</div>
+		</div>
+	{% endfor %}
+	<h3>Day 2</h3>
+	<div class="agenda_header g--grid_row">
+		<div class="g--grid_col-lg-3">Speaker</div>
+		<div class="g--grid_col-lg-7">Event</div>
+		<div class="g--grid_col-lg-1">PST</div>
+		<div class="g--grid_col-lg-1">EST</div>
+	</div>
+	{% for event in site.data.agenda-day2 %}
+		<div class="agenda_item g--grid_row {% if event.type == 'Breakout' %}breakout{% endif %}">
+			<div class="agenda_intro g--grid_col-md-9 g--grid_col-lg-3">
+				{% include svg-right.html %}
+				<div class="agenda_title">{{ event.title }}</div>
+				<div class="agenda_speaker">{{ event.speaker }}</div>
+				<div class="agenda_desc">{{ event.desc }}</div>
+			</div>
+			<div class="g--grid_col-0 g--grid_col-lg-7">
+				<div class="agenda_title">{{ event.title }}</div>
+				<div class="agenda_desc">{{ event.desc }}</div>
+			</div>
+			<div class="agenda_time g--grid_col-md-3">
+				<span>{{ event.day }}</span>
+				<span class="agenda_time_divider"></span>
+				<span>{{ event.pst }} PST</span>
+				<span class="agenda_time_divider"></span>
+				<span>{{ event.est }} EST</span>
 			</div>
 			<div class="g--grid_col-0 g--grid_col-lg-1">
 				{{ event.pst }}

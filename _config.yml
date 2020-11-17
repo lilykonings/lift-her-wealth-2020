@@ -1,13 +1,9 @@
-title: Lift Her Wealth 2020
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Lift Her Wealth | Dec 1, 2020 | Virtual Summit | Empowering womxn & demystifying money
+description: >-
+  A virtual summit for women who are looking to demystify the complicated world of money. Connect with and learn from women as they speak about stock investing, salary negotiation, building a budget, setting professional and financial goals, and more.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_handle: https://twitter.com/liftherwealth
 
 sass:
   style: compressed

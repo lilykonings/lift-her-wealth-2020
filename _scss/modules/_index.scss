@@ -1,5 +1,7 @@
 .max-width {
 	margin: 0 auto;
+	padding-left: 40px !important;
+	padding-right: 40px !important;
 	max-width: 1260px;
 }
 
@@ -45,9 +47,13 @@
 		list-style: none;
 
 		li {
+			display: none;
 			margin-left: 40px;
-			display: inline-block;
 			text-align: right;
+
+			@media (min-width: map-get($v--grid-breakpoints, sm)) {
+				display: inline-block;
+			}
 		}
 
 		a {
@@ -172,18 +178,28 @@
 	}
 }
 
-.spread {
+.glance {
 	h2 {
 		text-align: center;
-		font-size: 64px;
+		font-size: 40px;
 		color: $v--color-sage;
 		-webkit-text-fill-color: $v--color-white;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: $v--color-sage;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			font-size: 64px;
+		}
 	}
 
 	&_item {
-		padding: 0 40px;
+		@media (min-width: map-get($v--grid-breakpoints, sm)) {
+			padding: 0 16px;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
+			padding: 0 40px;
+		}
 
 		h3 {
 			margin: 0 0 8px;
@@ -212,13 +228,18 @@
 	// color: $v--color-white;
 
 	h2 {
-		margin-bottom: 60px;
+		margin-bottom: 24px;
 		text-align: center;
-		font-size: 64px;
+		font-size: 40px;
 		color: $v--color-citrus;
 		-webkit-text-fill-color: $v--color-white;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: $v--color-citrus;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			margin-bottom: 60px;
+			font-size: 64px;
+		}
 	}
 
 	&_grid {
@@ -233,19 +254,28 @@
 		align-items: center;
 		flex: 1 1;
 		margin-bottom: 64px;
-		padding: 0 40px;
+		padding: 0 16px;
 		text-align: center;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			padding: 0 40px;
+		}
 	}
 
 	&_photo {
 		display: flex;
 		justify-content: center;
-		width: 200px;
-		height: 320px;
+		width: 160px;
+		height: 256px;
 		border: 2px solid $v--color-citrus;
 		border-radius: 160px;
 		background-color: $v--color-blush;
 		overflow: hidden;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			width: 200px;
+			height: 320px;
+		}
 
 		img {
 			height: 100%;
@@ -290,30 +320,49 @@
 	margin-top: 20px;
 	padding: 16px 0;
 	line-height: 1.28;
-	font-size: 20px;
+	font-size: 18px;
+
+	@media (min-width: map-get($v--grid-breakpoints, lg)) {
+		font-size: 20px;
+	}
 
 	h2 {
-		margin-bottom: 60px;
+		margin-bottom: 24px;
 		text-align: center;
-		font-size: 64px;
+		font-size: 40px;
 		color: $v--color-green;
 		-webkit-text-fill-color: $v--color-white;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: $v--color-green;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			margin-bottom: 60px;	
+			font-size: 64px;
+		}
 	}
 
 	&_header {
-		margin-bottom: 40px;
+		display: none;
+		margin-bottom: 16px;
 		// font-weight: 600;
 		color: $v--color-citrus;
+
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
+			display: block;
+		}
 	}
 
 	&_item {
-		margin-bottom: 56px;
-
+		margin-bottom: 16px;
+		border: 1px solid $v--color-green;
+		border-radius: 16px;
+		margin-left: -16px;
+		margin-right: -16px;
+		padding: 18px 16px 16px;
+		background-color: $v--color-white;
 
 		> div {
-			padding-right: 40px;
+			padding-right: 24px;
 
 			&:last-child {
 				padding-right: 0;
@@ -321,16 +370,8 @@
 		}
 
 		&.breakout {
-			// border: 2px solid $v--color-citrus;
-			border-radius: 16px;
-			margin-left: -40px;
-			padding: 18px 0 16px 40px;
-			background-color: $v--color-citrus;
-			color: $v--color-white;
-
-			svg {
-				fill: $v--color-white;
-			}
+			border: 2px solid $v--color-citrus;
+			background-color: $v--color-powder;
 		}
 	}
 
@@ -348,13 +389,25 @@
 		> div {
 			margin-left: 40px;
 		}
+
+		.agenda_title,
+		.agenda_desc {
+			@media (min-width: map-get($v--grid-breakpoints, lg)) {
+				display: none;
+			}
+		}
 	}
 
 	&_speaker {
-		display: block;
+		margin-bottom: 8px;
 		font-family: 'Gentium Basic', serif;
 		font-style: italic;
-		font-size: 22px;
+		font-size: 20px;
+
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
+			margin-bottom: 0;
+			font-size: 22px;
+		}
 	}
 
 	&_title {
@@ -364,22 +417,75 @@
 		// font-size: 22px;
 		font-weight: 600;
 	}
+
+	&_desc {
+		margin-bottom: 40px;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			margin-bottom: 0;
+		}
+	}
+
+	&_time {
+		padding-left: 40px;
+		
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			text-align: right;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
+			display: none;
+		}
+
+		&_divider {
+			&:before {
+				content: '\00B7';
+				margin-right: 4px;
+
+				@media (min-width: map-get($v--grid-breakpoints, md)) {
+					content: '';
+					display: block;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	&_timezone {
+		display: inline-block;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			display: none;
+		}
+	}
 }
 
 .faq {
 	margin-top: 20px;
 	padding: 16px 0;
 	line-height: 1.28;
-	font-size: 20px;
+	font-size: 16px;
+
+	@media (min-width: map-get($v--grid-breakpoints, sm)) {
+		font-size: 18px
+	}
+
+	@media (min-width: map-get($v--grid-breakpoints, md)) {
+		font-size: 20px
+	}
 
 	h2 {
 		margin-bottom: 16px;
 		text-align: center;
-		font-size: 64px;
+		font-size: 40px;
 		color: $v--color-green;
 		-webkit-text-fill-color: $v--color-white;
 		-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: $v--color-green;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			font-size: 64px;
+		}
 	}
 
 	&_item {
@@ -411,6 +517,7 @@
 	}
 
 	svg {
+		flex-shrink: 0;
 		margin-top: -2px;
 		width: 20px;
 		height: 20px;
@@ -418,7 +525,16 @@
 	}
 
 	h3 {
-		font-size: 24px;
+		padding-right: 24px;
+		font-size: 18px;
+
+		@media (min-width: map-get($v--grid-breakpoints, sm)) {
+			font-size: 20px
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			font-size: 24px
+		}
 	}
 
 	p {
@@ -446,23 +562,34 @@
 		font-family: 'Gentium Basic', serif;
 		font-size: 32px;
 		color: $v--color-green;
-		// -webkit-text-fill-color: $v--color-white;
-		// -webkit-text-stroke-width: 1px;
-		// -webkit-text-stroke-color: $v--color-green;
 	}
 
 	&_logos {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			flex-direction: row;
+		}
 	}
 
 	svg {
-		height: 60px;
+		height: 40px;
 		fill: $v--color-green;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			height: 60px;
+		}
 	}
 
 	a:last-child svg {
-		margin-left: 80px;
+		margin-top: 16px;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			margin-top: 0;
+			margin-left: 80px;
+		}
 	}
 }

@@ -36,19 +36,19 @@ layout: default
 <section id="glance" class="spread max-width">
 	<!-- <h2>At A Glance</h2> -->
 	<div class="g--grid_row">
-		<div class="spread_item g--grid_col-4">
-			<div class="spread_icon">&#10035;</div>
-			<h3>9 Expert Talks</h3>
+		<div class="glance_item g--grid_col-sm-4">
+			<div class="glance_icon">&#10035;</div>
+			<h3>Expert Talks</h3>
 			<p>Hear from women at the top of their field on topics from personal finance to career to salary negotiation.</p>
 		</div>
-		<div class="spread_item g--grid_col-4">
-			<div class="spread_icon">&#10045;</div>
-			<h3>3 Workshops</h3>
+		<div class="glance_item g--grid_col-sm-4">
+			<div class="glance_icon">&#10045;</div>
+			<h3>Workshops</h3>
 			<p>Get hands on with money management in our interactive and tactical sessions. Space may be limited.</p>
 		</div>
-		<div class="spread_item g--grid_col-4">
-			<div class="spread_icon">&#10059;</div>
-			<h3>4 Breakout Rooms</h3>
+		<div class="glance_item g--grid_col-sm-4">
+			<div class="glance_icon">&#10059;</div>
+			<h3>Breakout Rooms</h3>
 			<p>Bring everything you've learned to these honest, facilitated conversations with your fellow attendees.</p>
 		</div>
 	</div>
@@ -79,30 +79,43 @@ layout: default
 	</div>
 </section>
 
-<section id="agenda" class="agenda max-width">
+<section id="agenda" class="agenda max-width g--grid_row">
 	<h2>Agenda</h2>
 	<div class="agenda_header g--grid_row">
-		<div class="g--grid_col-3">Speaker</div>
-		<div class="g--grid_col-6">Event</div>
-		<!-- <div class="g--grid_col-1">Type</div> -->
-		<div class="g--grid_col-1">PST</div>
-		<div class="g--grid_col-1">EST</div>
-		<div class="g--grid_col-1">BST</div>
+		<div class="g--grid_col-lg-3">Speaker</div>
+		<div class="g--grid_col-lg-6">Event</div>
+		<div class="g--grid_col-lg-1">Day</div>
+		<div class="g--grid_col-lg-1">PST</div>
+		<div class="g--grid_col-lg-1">EST</div>
 	</div>
 	{% for event in site.data.agenda %}
 		<div class="agenda_item g--grid_row {% if event.type == 'Breakout' %}breakout{% endif %}">
-			<div class="agenda_intro g--grid_col-3">
+			<div class="agenda_intro g--grid_col-md-9 g--grid_col-lg-3">
 				{% include svg-right.html %}
-				<div class="agenda_speaker">{{ event.speaker }}</div>
-			</div>
-			<div class="g--grid_col-6">
 				<div class="agenda_title">{{ event.title }}</div>
-				<div>{{ event.desc }}</div>
+				<div class="agenda_speaker">{{ event.speaker }}</div>
+				<div class="agenda_desc">{{ event.desc }}</div>
 			</div>
-			<!-- <div class="g--grid_col-1">{{ event.type }}</div> -->
-			<div class="g--grid_col-1">{{ event.pst }}</div>
-			<div class="g--grid_col-1">{{ event.est }}</div>
-			<div class="g--grid_col-1">{{ event.bst }}</div>
+			<div class="g--grid_col-0 g--grid_col-lg-6">
+				<div class="agenda_title">{{ event.title }}</div>
+				<div class="agenda_desc">{{ event.desc }}</div>
+			</div>
+			<div class="agenda_time g--grid_col-md-3">
+				<span>{{ event.day }}</span>
+				<span class="agenda_time_divider"></span>
+				<span>{{ event.pst }} PST</span>
+				<span class="agenda_time_divider"></span>
+				<span>{{ event.est }} EST</span>
+			</div>
+			<div class="g--grid_col-0 g--grid_col-lg-1">
+				{{ event.day }}
+			</div>
+			<div class="g--grid_col-0 g--grid_col-lg-1">
+				{{ event.pst }}
+			</div>
+			<div class="g--grid_col-0 g--grid_col-lg-1">
+				{{ event.est }}
+			</div>
 		</div>
 	{% endfor %}
 </section>

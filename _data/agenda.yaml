@@ -2,18 +2,14 @@
   speaker: Lily Konings<br>Pegah Abdolhosseini
   desc: A quick hello and introduction to the day ahead.
   type: '-'
+  day: Dec 1
   pst: 10am
   est: 1pm
   bst: 7pm
 - title: Stock Investing 101
   speaker: Allison Barr Allen
   type: Talk
-  pst: 10:15am
-  est: 1:15pm
-  bst: 7:15pm
-- title: Breakout Room&#58; Europe
-  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
-  type: Breakout
+  day: Dec 1
   pst: 10:15am
   est: 1:15pm
   bst: 7:15pm
@@ -21,6 +17,7 @@
   speaker: Sallie Krawcheck
   desc: “Be more confident. Lean in. You go, girl!” The idea that success is there for women to grab if we do everything *just right* feels good because it puts us in control. But it’s a lie. Even before the recession knocked so many women sideways, our forward progress had been stalled. Join Ellevest CEO Sallie Krawcheck to explore the money lies that are keeping us from financial equality and some critical truths that will help us get there.
   type: Talk
+  day: Dec 1
   pst: 11am
   est: 2pm
   bst: 8pm
@@ -28,6 +25,7 @@
   speaker: Vrinda Gupta
   desc: Women face hidden costs over their lifetime, from entry-level salaries to last retirement withdrawals and everything in between (the pink tax, gender wage gap, credit.). In this session, Sequin shares industry secrets to demystify credit, and dives deep into how building your credit history can be a powerful financial tool in disrupting these costs. Past attendees saw their credit confidence increase by 56% -- we'll see you there!
   type: Talk
+  day: Dec 1
   pst: 12pm
   est: 3pm
   bst: 9pm
@@ -35,6 +33,7 @@
   speaker: Alli Young
   desc: In Alli's signature keynote, "Demystifying Career Advancement," attendees walk away inspired to own their career development and finally know how.  Alli shares what she learned during her 20-year career in technology and year-long study of career advancement. She breaks down the five skills we all need to advance and explores how these skills can be incorporated into new behaviors. Attendees leave with new strategies to think about how to navigate their career, two methods of self-advocating ("Always On" and "The Big Ask"), and best practices for making sure they get recognized for their great work and seen for their impact.   
   type: Talk
+  day: Dec 1
   pst: 1pm
   est: 4pm
   bst: 10pm
@@ -42,67 +41,68 @@
   speaker: Maia Bittner<br>Shireen Jaffer<br>Mollie Fehlig
   desc: Join 3 prolific experts as they share their stories, insights, and outlooks on the state of Angel Investing.<br><br>Moderated by Annika Lewis, investor at Vanedge Capital.
   type: Panel
+  day: Dec 1
   pst: 2pm
   est: 5pm
   bst: 11pm
+- title: Workshop&#58; Getting Started With Building Your Financial System
+  speaker: Kavya Ravikanti
+  desc: Not sure where to start with tackling your money? In this workshop, we'll go over the key components of a personal finance system and then start building one for you by assessing your numbers. This workshop is aimed at those just starting on their financial journey, but open to anyone who'd like to join!
+  type: Workshop
+  day: Dec 1
+  pst: 3pm
+  est: 6pm
+- title: Breakout Rooms
+  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
+  type: Breakout
+  day: Dec 1
+  pst: 4:30pm
+  est: 7:30pm
 - title: Workshop&#58; Let's Talk About Imposter Syndrome
   speaker: Gala Jackson
   desc: Imposter Syndrome is the overwhelming feeling that you don’t deserve your success — that your achievements are just luck, or you’re not as competent as the people around you. Sound familiar? Then this online workshop is for you. We’ll explore who experiences Imposter Syndrome (hint&#58; you’re not alone). We’ll talk about why the pandemic might launch those feelings into high gear, and different ways they might show up. You’ll walk away knowing how to recognize Imposter Syndrome, with concrete actions you can take to deal with it.
   type: Workshop
-  pst: 2pm
-  est: 5pm
-  bst: 11pm
-- title: Breakout Rooms&#58; US East Coast &amp; Canada
-  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
-  type: Breakout
-  pst: 2pm
-  est: 5pm
-  bst: 11pm
+  day: Dec 2
+  pst: 10am
+  est: 1pm
 - title: Redefining Your Compensation Strategy
   speaker: Keisha Mistry
   desc: 60% of women believe they are worth more than they are getting paid. The question becomes how can we start working towards changing this? Part of the answer lies in your compensation package. Most employees only consider salary as part of their compensation. The truth is there are many factors that can contribute to your compensation packages. It also includes vacation days, extended health benefits, flexible work, and the list could go on. You could be miscalculating hundreds (and hopefully not thousands) of dollars. In this talk, “Redefining your Compensation Strategy” I will break down the different facets of compensation and help you strategize your next negotiation. You will leave this talk feeling empowered with the knowledge to take control of your compensation and feel you’re being paid your worth.
   type: Talk
-  pst: 3pm
-  est: 6pm
-  bst: 12am
+  day: Dec 2
+  pst: 11am
+  est: 2pm
 - title: Financial Diplomacy in Relationships
   speaker: Sam Anderson
   desc: Broaching the subject of personal finances can be difficult with a partner, especially if you both have different goals and plans on how to meet them. Discussions around money can turn very quickly in the wrong direction and both parties are left feeling frustrated. To make things worse, there really is no "right way" to talk about finances with your significant other. Every relationship is unique and how you communicate on this topic needs to take in account these idiosyncrasies. In this presentation, I hope to help you and your partner on your journey by sharing what did and did not work in my own personal relationship. And don't worry, we still very happy and well on our way in building the life we want together.
   type: Talk
-  pst: 3pm
-  est: 6pm
-  bst: 12am
+  day: Dec 2
+  pst: 11:30am
+  est: 2:30pm
 - title: Mastering the Art of Negotiation
   speaker: Pegah Abdolhosseini
   desc: Why does the word negotiation make most people cringe? Negotiating is one of the most powerful skills to leverage when you want to speak out and stand your ground in any situation. In this talk, Pegah will walk you through some best practices, techniques, and tips for stepping into and walking out of any negotiation with confidence.
   type: Talk
-  pst: 3:30pm
-  est: 6:30pm
-  bst: 12:30am
-- title: Workshop&#58; Getting Started With Building Your Financial System (Beginners)
-  speaker: Kavya Ravikanti
-  desc: Not sure where to start with tackling your money? In this workshop, we'll go over the key components of a personal finance system and then start building one for you by assessing your numbers. This workshop is aimed at those just starting on their financial journey, but open to anyone who'd like to join!
-  type: Workshop
-  pst: 4pm
-  est: 7pm
-  bst: 1am
-- title: Workshop&#58; Talk Money to Me&#58; A Roadmap to Creating Financial Goals (Advanced)
+  day: Dec 2
+  pst: 12pm
+  est: 3pm
+- title: Workshop&#58; Talk Money to Me&#58; A Roadmap to Creating Financial Goals
   speaker: Cissy Hu
   desc: Have a growing savings account, allocating to your 401(k), and paying down debt, but not sure what to do next with your money? Join this workshop to level up on your money management strategies. During the session, we’ll evaluate your 3 key financial metrics, create attainable financial goals, build out your personal finance tech stack, and walk away with the ultimate roadmap for managing your personal finance system. 
   type: Workshop
-  pst: 4pm
-  est: 7pm
-  bst: 1am
-- title: Breakout Rooms&#58; US Central &amp; West Coast
-  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
-  type: Breakout
-  pst: 5:30pm
-  est: 8:30pm
-  bst: 2:30am
+  day: Dec 2
+  pst: 12:30pm
+  est: 3:30pm
 - title: The Promises and Perils of Physical Investments
   speaker: Hena Mehta<br>Dipika Jaikishan
   desc: In this candid chat, Hena and Dipika will be talking about home ownership, investing in precious commodities such as gold, and the pros and cons of these tangible assets.
   type: Talk
-  pst: 5:30pm
-  est: 8:30pm
-  bst: 2:30am
+  day: Dec 2
+  pst: 2pm
+  est: 5pm
+- title: Breakout Rooms
+  desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
+  type: Breakout
+  day: Dec 2
+  pst: 3pm
+  est: 4:30pm

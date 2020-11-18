@@ -38,11 +38,17 @@
   desc: In this candid chat, Hena and Dipika will be talking about home ownership, investing in precious commodities such as gold, and the pros and cons of these tangible assets.
   type: Talk
   day: Dec 2
-  pst: TBA
-  est: TBA
+  pst: 1:30pm
+  est: 4:30pm
 - title: Breakout Rooms
   desc: Get matched into sessions with your fellow attendees to have private and honest conversations about money. A moderator will teach participants how to use the matching tool and facilitate the flow of topics as we breakout and regroup.
   type: Breakout
   day: Dec 2
-  pst: 3pm
-  est: 4:30pm
+  pst: 2:30pm
+  est: 5:30pm
+- title: Outro
+  speaker: Lily Konings<br>Pegah Abdolhosseini
+  desc: Wrap up and thank yous.
+  day: Dec 2
+  pst: 4pm
+  est: 7pm

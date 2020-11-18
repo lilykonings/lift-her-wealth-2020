@@ -45,18 +45,12 @@
 		list-style: none;
 
 		li {
-			display: inline-block;
+			display: none;
 			margin-left: 40px;
 			text-align: right;
 
-			&:not(:first-child) {
-				display: none;
-			}
-
 			@media (min-width: map-get($v--grid-breakpoints, sm)) {
-				&:not(:first-child) {
-					display: inline-block;
-				}
+				display: inline-block;
 			}
 		}
 
@@ -174,7 +168,7 @@
 
 .star {
 	position: absolute;
-	bottom: -80px;
+	bottom: -40px;
 	right: 0;
 
 	@media (min-width: map-get($v--grid-breakpoints, sm)) {
@@ -256,13 +250,14 @@
 	}
 
 	p {
-		margin-bottom: 80px;
+		margin-bottom: 40px;
 		padding: 0;
 		text-align: center;
 		line-height: 1.4;
 		font-size: 20px;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			margin-bottom: 80px;
 			padding: 0 40px;
 		}
 
@@ -281,6 +276,12 @@
 	}
 
 	&_item {
+		margin-bottom: 32px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
 		@media (min-width: map-get($v--grid-breakpoints, sm)) {
 			padding: 0 16px;
 		}
@@ -295,6 +296,7 @@
 		}
 
 		p {
+			margin-bottom: 0;
 			text-align: left;
 			padding: 0;
 			line-height: 1.36;
@@ -344,11 +346,12 @@
 		flex-direction: column;
 		align-items: center;
 		flex: 1 1;
-		margin-bottom: 64px;
+		margin-bottom: 32px;
 		padding: 0 16px;
 		text-align: center;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			margin-bottom: 64px;
 			padding: 0 40px;
 		}
 	}

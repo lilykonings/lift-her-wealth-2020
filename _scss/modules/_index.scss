@@ -28,15 +28,23 @@
 	&_body {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
+
+		@media (min-width: map-get($v--grid-breakpoints, sm)) {
+			justify-content: space-between;
+		}
 	}
 
-	&_logo {
-		font-family: 'Syncopate', sans-serif;
-		font-weight: 700;
-		font-size: 14px;
-		letter-spacing: 2px;
-		color: $v--color-citrus;
+	// &_logo {
+	// 	font-family: 'Syncopate', sans-serif;
+	// 	font-weight: 700;
+	// 	font-size: 14px;
+	// 	letter-spacing: 2px;
+	// 	color: $v--color-citrus;
+	// }
+
+	svg {
+		height: 18px;
 	}
 
 	&_nav {

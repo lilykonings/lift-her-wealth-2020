@@ -17,22 +17,20 @@
 
 .header {
 	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 16px 0;
-	border-top: 2px solid $v--color-black;
+	left: 16px;
+	top: 16px;
+	border: 2px solid $v--color-black;
 	background-color: $v--color-white;
 	z-index: 100;
+
+	@media (min-width: map-get($v--grid-breakpoints, md)) {
+		left: 24px;
+		top: 24px;
+	}
 
 	&_body {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-
-		@media (min-width: map-get($v--grid-breakpoints, sm)) {
-			justify-content: space-between;
-		}
 	}
 
 	// &_logo {
@@ -43,28 +41,35 @@
 	// 	color: $v--color-citrus;
 	// }
 
-	svg {
-		height: 18px;
+	&_logo {
+		margin: 16px 20px;
+		height: 14px;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			height: 16px;
+		}
+
+		svg {
+			height: 100%;
+		}
 	}
 
 	&_nav {
-		margin: 0;
-		padding: 0;
-		list-style: none;
 
-		li {
+		a {
 			display: none;
-			margin-left: 40px;
-			text-align: right;
+			border-left: 2px solid $v--color-black;
+			padding: 16px 20px;
+			color: $v--color-green;
+			font-weight: 500;
 
 			@media (min-width: map-get($v--grid-breakpoints, sm)) {
 				display: inline-block;
 			}
-		}
 
-		a {
-			color: $v--color-green;
-			font-weight: 500;
+			&:hover {
+				color: $v--color-citrus;
+			}
 		}
 	}
 }
@@ -73,13 +78,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 80px;
+	padding-top: 120px;
 	padding-bottom: 16px;
 	text-align: center;
 
 	@media (min-width: map-get($v--grid-breakpoints, md)) {
 		height: 100vh;
-		padding-top: 40px;
+		padding-top: 100px;
 		padding-bottom: 0;
 	}
 
@@ -544,6 +549,7 @@
 
 	&_desc {
 		margin-bottom: 24px;
+		font-family: sans-serif;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
 			margin-bottom: 0;
@@ -588,6 +594,7 @@
 	margin-top: 20px;
 	padding: 16px 0;
 	line-height: 1.28;
+	font-family: sans-serif;
 	font-size: 16px;
 
 	@media (min-width: map-get($v--grid-breakpoints, sm)) {

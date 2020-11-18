@@ -32,13 +32,11 @@
 	}
 
 	&_logo {
-		// display: flex;
-		// align-items: center;
-		// font-family: 'Gentium Basic', serif;
-		font-weight: 600;
-		// font-size: 24px;
-		letter-spacing: 0.24px;
-		color: $v--color-black;
+		font-family: 'Syncopate', sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: 2px;
+		color: $v--color-citrus;
 	}
 
 	&_nav {
@@ -131,12 +129,13 @@
 	}
 
 	&_date {
-		font-family: 'Space Mono', monospace;
+		font-family: 'Syncopate', sans-serif;
 		font-weight: 700;
-		font-size: 16px;
+		font-size: 14px;
+		letter-spacing: 4px;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
-			font-size: 18px;
+			font-size: 14px;
 		}
 	}
 
@@ -239,17 +238,45 @@
 	}
 }
 
-.glance {
+.mission {
 	h2 {
+		margin-bottom: 16px;
 		text-align: center;
-		font-size: 40px;
-		color: $v--color-sage;
+		font-family: 'Syncopate', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		color: $v--color-black;
 		-webkit-text-fill-color: $v--color-white;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $v--color-sage;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: $v--color-black;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
-			font-size: 64px;
+			font-size: 54px;
+		}
+	}
+
+	p {
+		margin-bottom: 80px;
+		padding: 0;
+		text-align: center;
+		line-height: 1.4;
+		font-size: 20px;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			padding: 0 40px;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
+			padding: 0 80px;
+			font-size: 24px;
+		}
+
+		br {
+			display: none;
+
+			@media (min-width: map-get($v--grid-breakpoints, lg)) {
+				display: block;
+			}
 		}
 	}
 
@@ -268,6 +295,8 @@
 		}
 
 		p {
+			text-align: left;
+			padding: 0;
 			line-height: 1.36;
 			font-size: 18px;
 		}
@@ -291,15 +320,17 @@
 	h2 {
 		margin-bottom: 24px;
 		text-align: center;
-		font-size: 40px;
+		font-family: 'Syncopate', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
 		color: $v--color-citrus;
 		-webkit-text-fill-color: $v--color-white;
-		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-width: 2px;
 		-webkit-text-stroke-color: $v--color-citrus;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
 			margin-bottom: 60px;
-			font-size: 64px;
+			font-size: 54px;
 		}
 	}
 
@@ -395,24 +426,29 @@
 	h2 {
 		margin-bottom: 0;
 		text-align: center;
-		font-size: 40px;
-		color: $v--color-green;
+		font-family: 'Syncopate', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		color: $v--color-black;
 		-webkit-text-fill-color: $v--color-white;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $v--color-green;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: $v--color-black;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
-			font-size: 64px;
+			font-size: 54px;
 		}
 	}
 
 	h3 {
 		margin-top: 32px;
+		margin-bottom: 16px;
 		text-align: center;
-		font-family: 'Space Mono', monospace;
-		font-weight: 700;
-		font-size: 32px;
+		font-size: 24px;
 		color: $v--color-citrus;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			font-size: 32px;
+		}
 
 		&:last-of-type {
 			margin-top: 80px;
@@ -555,14 +591,16 @@
 	h2 {
 		margin-bottom: 16px;
 		text-align: center;
-		font-size: 40px;
-		color: $v--color-green;
+		font-family: 'Syncopate', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		color: $v--color-black;
 		-webkit-text-fill-color: $v--color-white;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: $v--color-green;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: $v--color-black;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
-			font-size: 64px;
+			font-size: 54px;
 		}
 	}
 

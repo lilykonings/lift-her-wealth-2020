@@ -704,34 +704,36 @@
 		justify-content: center;
 		align-items: center;
 
-		@media (min-width: map-get($v--grid-breakpoints, md)) {
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
 			flex-direction: row;
 		}
 	}
 
 	svg {
+		margin-bottom: 32px;
 		height: 40px;
 		fill: $v--color-green;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			height: 48px;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
 			height: 60px;
+			margin-bottom: 0;
+			margin-left: 60px;
 		}
 	}
 
 	#superhuman svg {
-		height: 24px;
+		height: 16px;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
-			height: 28px;
+			height: 20px;
 		}
-	}
 
-	a:not(:first-child) svg {
-		margin-top: 16px;
-
-		@media (min-width: map-get($v--grid-breakpoints, md)) {
-			margin-top: 0;
-			margin-left: 60px;
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
+			height: 28px;
 		}
 	}
 }

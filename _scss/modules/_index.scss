@@ -718,12 +718,20 @@
 		}
 	}
 
-	a:last-child svg {
+	#superhuman svg {
+		height: 24px;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			height: 28px;
+		}
+	}
+
+	a:not(:first-child) svg {
 		margin-top: 16px;
 
 		@media (min-width: map-get($v--grid-breakpoints, md)) {
 			margin-top: 0;
-			margin-left: 80px;
+			margin-left: 60px;
 		}
 	}
 }

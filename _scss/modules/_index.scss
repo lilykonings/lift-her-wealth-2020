@@ -721,6 +721,11 @@
 		@media (min-width: map-get($v--grid-breakpoints, lg)) {
 			height: 60px;
 			margin-bottom: 0;
+		}
+	}
+
+	a:not(:first-child) svg {
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
 			margin-left: 60px;
 		}
 	}
@@ -734,6 +739,18 @@
 
 		@media (min-width: map-get($v--grid-breakpoints, lg)) {
 			height: 28px;
+		}
+	}
+
+	#vercel svg {
+		height: 28px;
+
+		@media (min-width: map-get($v--grid-breakpoints, md)) {
+			height: 32px;
+		}
+
+		@media (min-width: map-get($v--grid-breakpoints, lg)) {
+			height: 40px;
 		}
 	}
 }
